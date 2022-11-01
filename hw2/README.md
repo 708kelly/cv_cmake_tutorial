@@ -21,6 +21,7 @@
 2. 在拿完牌組後，會建立 4 $\times$ 13 的 bool 矩陣，方便計算，e.g. cards 有一張 SA，對應的 matrix[0][0] 就會是 `True`
 3. 建議先將 Card.cpp 完成，再開始寫 Deck.cpp
 4. Deck.cpp 裡的 check_continous()，input 是一個 len=13 的 vector，分別代表 A~K，這是一個 template function，可以放入 Int/bool
+5. Card.cpp 裡的 diff_one_index()，是有方向性的，只有當新的卡片 (that) 比原本的卡片點數多一才是 `True`，反之，當 that 的點數小於原本的卡片一點時是 `False`。
 
 以下是漏漏長的題目
 ### class 1
