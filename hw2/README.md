@@ -16,6 +16,11 @@
 >(基本上應該可以不用看題目詳述XD，直接看 code 裡的註解就好了～)
 
 
+### 程式邏輯
+1. 一次會給 9 張牌，在 `main.cpp` 會依序將每一張牌轉換成 Card，並依照拿牌規則將符合的牌放入 Deck 的 vector<Card> 中
+2.  在拿完牌組後，會建立 4 $\times$ 13 的 bool 矩陣，方便計算，e.g. cards 有一張 SA，對應的 matrix[0][0] 就會是 `True`
+3. Deck.cpp 裡的 check_continous()，input 是一個 len=13 的 vector，分別代表 A~K，這是一個 template function，可以放入 Int/bool
+
 以下是漏漏長的題目
 ### class 1
 
